@@ -1,0 +1,23 @@
+.lines-block
+    display: flex
+    height: 10px
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    &__first-line
+        width: 40px
+        height: 10px
+        background-color: #f36746
+        margin-right: 20px
+        border-radius: 5px
+    &__second-line
+        width: 80px
+        height: 10px
+        background-color: #3cbfc3
+        border-radius: 5px
+    &_revers
+        .lines-block__first-line
+            background-color: #3cbfc3
+        .lines-block__second-line
+            background-color: #f36746

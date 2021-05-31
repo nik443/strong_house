@@ -1,0 +1,167 @@
+.reviews
+    margin-top: 119px
+    position: relative
+    &__slider
+        margin-top: 47px
+    &__slider-item-content
+        width: 625px
+        height: 556px
+        margin: 0 auto
+        overflow: hidden
+        position: relative
+        video
+            width: 626px
+            height: 354px
+    &__slider-item-content-lines
+        &_left
+            .reviews__slider-item-content-black-line
+                background: url('../img/reviews-video-black-left.png') center (center/cover) no-repeat
+                h3 
+                    &::after
+                        background-color: #f36746
+            .reviews__slider-item-content-bottom-line
+                background-color: #3cbfc3
+                transform: rotate(-5deg) translate(-18px, 134px)
+    &__slider-item-content-black-line
+        position: absolute
+        bottom: 26px
+        width: 100%
+        height: 255px
+        background: url('../img/reviews-video-black-rigth.png') center (center/cover) no-repeat
+        color: #ffffff
+        padding: 69px 68px
+        h3
+            font-family: 'Myriad Pro Bold'
+            font-size: 36px
+            line-height: 0.89
+            letter-spacing: -0.72px
+            position: relative
+            &::after
+                content: ''
+                display: block
+                width: 40px
+                height: 10px
+                border-radius: 5px
+                background-color: #3cbfc3
+                position: absolute
+                left: 122px
+                top: 50%
+                transform: translateY(-50%)
+        p
+            font-size: 18px
+            margin-top: 22px
+    &__slider-item-content-bottom-line
+        height: 33px
+        width: 650px
+        background-color:#f36746
+        position: absolute
+        z-index: 1
+        transform: rotate(5deg) translate(-5px, 136px)
+    &__slider-dots-block        
+        width: 77px
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 710px
+    &__slider-dots-block .slick-dots
+        display: flex
+        list-style: none
+        li 
+            margin-right: 5px
+            &:last-child
+                margin-right: 0
+            button
+                width: 22px
+                height: 17px
+                border: 0
+                border-radius: 5px
+                background-color: #3cbfc3
+                font-size: 0
+        .slick-active button
+            background-color: #f36746
+    &__slider-arrows-block
+        text-align: center
+        margin-top: 17px
+    &__slider-arrows-block .slick-arrow
+        font-size: 0
+        border: none
+        background-color: #ffffff
+        opacity: 0.4
+        cursor: pointer
+        &:hover
+            opacity: 1
+    &__slider-arrows-block .slick-next
+        transform: rotateY(180deg)
+        margin-left: 33px
+
+@media ( max-width: 1438px )
+    .reviews
+        &__slider-item-content
+            width: 525px
+            video
+                width: 525px
+        &__slider-item-content-lines_left
+            .reviews__slider-item-content-bottom-line
+                transform: rotate(-5deg) translate(-18px,125px)
+@media ( max-width: 1200px )
+    .reviews
+        margin-top: 47px
+        &__slider-item-content
+            width: 453px
+            height: 444px
+            video
+                width: 454px
+                height: auto
+        &__slider-item-content-black-line
+            bottom: 0
+            padding: 49px 27px
+        &__slider-item-content-lines_left
+            .reviews__slider-item-content-bottom-line
+                transform: rotate(-5deg) translate(-18px,119px)
+@media ( max-width: 992px )
+    .reviews
+        &__slider-item-content-lines_left .reviews__slider-item-content-bottom-line, &__slider-item-content-bottom-line
+            transform: rotate(0deg) translate(-18px,133px)
+        &__slider-item-content-bottom-line
+            height: 41px
+        &__slider-dots-block
+            width: auto
+@media ( max-width: 768px )
+    .reviews
+        height: 800px
+        &__slider-item-content-black-line
+            text-align: left
+        .slick-dots
+            margin-top: 54px
+@media ( max-width: 576px )
+    .reviews
+        &__slider-item-content
+            width: 384px
+        video
+            width: 382px
+        &__slider-item-content-black-line
+            width: 383px
+            height: 237px
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 45px
+            h3
+                font-size: 20px
+    .reviews__slider-item-content-black-line h3
+        font-size: 28px
+@media ( max-width: 425px )
+    .reviews
+        height: 714px
+        &__slider-item-content, video, &__slider-item-content-black-line
+            max-width: 300px
+        &__slider-item-content
+            height: 388px
+        &__slider-item-content-black-line
+            bottom: 30px
+            padding: 46px 15px
+            p 
+                margin-top: 16px
+        &__slider-arrows-block, .slick-dots
+            margin-top: 0
+        &__slider-dots-block
+            top: 690px

@@ -1,0 +1,96 @@
+.circle
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 110px
+    height: 110px
+    background-color: #ffffff
+    border-radius: 100%
+    box-shadow: 0px 20px 50px 0 rgba(0, 0, 0, 0.4)
+    z-index: 4
+    position: absolute
+    right: 20px
+    bottom: -14px
+    img
+        display: block
+        width: 32px
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        width: 130px
+        height: 130px
+        opacity: 0.6
+        background-color: #ffffff
+        border-radius: 100%
+        top: -10px
+        left: -10px
+        z-index: -1
+    &_in-reviews
+        width: 88px
+        height: 88px  
+        left: 50%
+        transform: translateX(-50%)
+        top: 8px
+        background-color: #eb0008
+        box-shadow: none
+        &::after
+            background-color: #ff131a
+            width: 105px
+            height: 105px
+            top: -8px
+            left: -8px
+    &_play-video
+        width: 85px
+        height: 85px
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        background-color: rgba(255, 255, 255, 0.7)
+        &::after
+            width: 99px
+            height: 99px
+            top: -7px
+            left: -7px
+            opacity: 0.5
+
+@media ( max-width: 1200px )
+    .circle
+        right: -13px
+        bottom: -21px
+@media ( max-width: 992px )
+    .circle
+        box-shadow: 0 7px 23px 0 rgba(0, 0, 0, 40%)
+        width: 90px
+        height: 90px
+        right: 40px
+        bottom: -17px
+        &::after
+            width: 110px
+            height: 110px
+        &_in-reviews
+            width: 80px
+            height: 80px
+            top: 10px
+            left: auto
+            transform: none
+            right: 30px
+            &::after
+                width: 100px
+                height: 100px
+                top: -10px
+                left: -10px
+        &_play-video::after
+            top: -10px
+            left: -10px
+@media ( max-width: 768px )
+    .circle
+        right: 11px
+        bottom: -17px
+        &_in-reviews
+            transform: translateX(-50%)
+            left: 50%
+            top: 110px
+@media ( max-width: 425px )
+    .circle_in-reviews
+        top: 91px

@@ -1,0 +1,226 @@
+.header
+    display: flex
+    justify-content: space-between
+    &__section
+        padding-top: 49px
+        height: 1015px
+        background: url('../img/bg/header-bg.svg') center (center/cover) no-repeat
+    &__nav-wrapper
+        display: flex
+        align-items: center
+    &__burger
+        display: none
+    &__nav
+        height: 21px
+    &__nav-menu
+        display: flex
+        li 
+            margin-right: 23px
+            &:last-child
+                margin-right: 0
+        a
+            text-decoration: none
+            font-size: 17px
+            color: #282a2e
+    &__nav-building-submenu
+        display: none
+    &__tels-wrapper
+        width: 33.86%
+        height: 54px
+        margin-left: 34px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__tels-wathsapp
+        margin-right: 16px
+    &__tels
+        a
+            width: 241px
+            display: block
+            text-decoration: none
+            color: #ffff
+            font-size: 22px
+            font-family: 'Myriad Pro Bold'
+            line-height: 1.25
+            letter-spacing: 4.4px
+    &__content-wrapper
+        margin-top: 93px
+        display: flex
+        justify-content: flex-end
+    &__content
+        width: 39%
+        text-align: left
+        position: relative
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            left: -113px
+            top: 101px
+            width: 80px
+            height: 10px
+            border-radius: 5px
+            background-color: #282a2e
+        p
+            font-family: 'Corbel Bold'
+            font-size: 18px
+            color: #282a2e
+            margin-bottom: 35px
+    &__tagline
+        font-family: 'Corbel Regular'
+        font-size: 27.5px
+        letter-spacing: -1.1px
+        color: #ffffff
+
+@media ( max-width: 1400px )
+    .header
+        &__nav-menu li
+            margin-right: 18px
+        &__tels-wrapper
+            width: 262px
+            margin-left: 30px
+            a 
+                font-size: 18px
+                width: 210px
+        &__tels-wathsapp
+            margin-right: 10px
+@media ( max-width: 1200px )
+    .header
+        overflow: visible
+        &__nav-wrapper
+            position: relative
+        &__tels-wrapper
+            position: absolute
+            bottom: -533px
+            right: 207px
+        &__nav-menu li
+            margin-right: 33px
+            a 
+                font-size: 18px
+        &__content-wrapper
+            margin-top: 70px
+        &__content
+            width: 509px
+@media ( max-width: 992px )
+    .header
+        flex-direction: column
+        align-items: center
+        &__section
+            padding-top: 20px
+            background-position: right
+        &__logo img
+            transform: scale(0.9)
+        &__nav-wrapper
+            margin-top: 46px
+            a 
+                font-size: 20px
+                width: 226px
+        &__nav ul li a
+            font-size: 20px
+        &__tels-wrapper
+            bottom: -544px
+            right: 50%
+            transform: translateX(50%)
+            width: 272px
+        &__content
+            width: 504px
+            margin: 0 auto
+            text-align: center
+@media ( max-width: 768px )
+    .header
+        &__section
+            height: 892px 
+        &__nav-menu li
+            margin-right: 19px
+            a 
+                font-size: 18px
+        &__content::before
+            left: -93px
+@media ( max-width: 576px )
+    .header
+        position: relative
+        &__section
+            height: 846px
+        &__section
+            padding-top: 84px
+        &__burger
+            display: block
+            z-index: 3
+            position: absolute
+            top: -50px
+            right: 10px
+            &_active
+                width: 60px
+                height: 60px
+                .header__burger-line
+                    &:nth-child(2)
+                        transform: rotate(45deg)
+                    &:nth-child(1)
+                        transform: rotate(-45deg)
+                        top: 10px
+                    &:nth-child(3)
+                        opacity: 0
+        &__burger-line
+            width: 65px
+            height: 4px
+            background-color: #fff
+            margin-bottom: 6px
+            transition: 0.7s all
+            position: relative
+            top: 0
+            opacity: 1
+            &:last-child
+                margin-bottom: 0
+        &__nav-wrapper
+            position: static
+        &__nav
+            position: absolute
+            top: -84px
+            right: -310px
+            width: 300px
+            height: auto
+            background-color: rgb(40, 42, 46)
+            z-index: 2
+            border-radius: 10px 0 0 10px
+            transition: 0.7s all
+            &_active
+                right: -10px
+            a 
+                padding: 0 20px
+                text-align: left
+        &__nav-menu
+            flex-direction: column
+            height: 868px
+            padding-top: 88px
+            li
+                margin: 0 0 25px 0
+                a 
+                    color: #fff
+                    display: block
+                    width: 100%
+        &__nav-building-submenu
+            display: none
+            li
+                &:first-child
+                    margin: 25px 0 25px 0
+                &:last-child
+                    margin: 0 0 0 0
+                a 
+                    color: #fff
+                    padding: 0 20px 0 60px
+            &_active
+                display: block
+        &__content-wrapper
+            margin-top: 18px  
+        &__tels-wrapper
+            bottom: -514px     
+@media ( max-width: 425px )
+    .header
+        &__section
+            padding-top: 74px
+        &__burger
+            top: -44px
+        &__content
+            width: auto
+        &__tagline
+            font-size: 20px

@@ -1,0 +1,218 @@
+.projects
+    position: relative
+    padding-top: 77px
+    &__wrapper
+        width: 100%
+        height: 695px
+        margin-top: 89px
+        background: url('../img/bg/project-bg.svg') center (center/cover) no-repeat
+    &__slider
+        width: 1328px
+        margin: 0 auto
+        position: relative
+    &__slider-item:hover .projects__slider-item-descr
+        transition: 0.7
+        opacity: 1
+    &__slider-item-content
+        width: 650px
+        height: 475px
+        margin: 0 auto
+        border: 20px solid black
+        position: relative
+    &__slider-item-descr
+        display: flex
+        transition: 0.7
+        opacity: 0
+        width: 100%
+        height: 129px
+        padding: 25px 25px 16px 25px
+        background-color: rgba(3, 3, 3, 0.8)
+        position: absolute
+        bottom: 0
+        color: #ffffff
+        justify-content: space-between
+        a
+            display: block
+            margin-top: 22px
+            font-size: 18px
+            letter-spacing: -0.36px
+            color: #ffffff
+    &__slider-item-descr-characteristics
+        width: 296px
+    &__slider-item-descr-characteristics-wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 20px
+    &__slider-item-descr-characteristics-item
+        font-family: 'Myriad Pro Bold'
+        font-size: 24px
+        letter-spacing: -0.48px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            margin-right: 11px
+
+/**   SLICKSLIDER-ELEMENTS **/
+.projects__slider 
+    .slick-arrow
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        border: none
+        position: absolute
+        transform: translateY(-50%)
+        top: 50%
+        z-index: 1
+        font-size: 0
+        width: 110px
+        height: 110px
+        background-color: #ffffff
+        border-radius: 100%
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            width: 130px
+            height: 130px
+            opacity: 0.6
+            background-color: #ffffff
+            border-radius: 100%
+            top: -10px
+            left: -10px
+            z-index: -1
+    .slick-prev
+        left: -30px
+    .slick-next
+        right: -30px
+        img
+            transform: rotate(180deg)
+
+@media ( max-width: 1438px )
+    .projects
+        &__wrapper
+            height: 630px
+        &__slider-item-content
+            width: 550px
+            height: 404px
+            img
+                max-width: 510px
+        &__slider-item-descr
+            padding: 10px 20px
+            a 
+                width: 110px
+    /**   SLICKSLIDER-ELEMENTS **/
+    .projects__slider 
+        width: auto
+        .slick-prev
+            left: 32px
+        .slick-next
+            right: 32px
+@media ( max-width: 1200px )
+    .projects
+        &__wrapper
+            height: 542px
+            margin-top: 40px
+            padding-top: 33px
+        &__slider-item-content
+            width: 480px
+            height: 354px
+            img
+                max-width: 440px
+        &__slider-item-descr
+            height: 106px
+        &__slider-item-descr a
+            width: 100px
+            margin: 19px 0 0 36px
+            font-size: 16px
+        &__slider-item-descr-characteristics-item
+            font-size: 18px
+    /**   SLICKSLIDER-ELEMENTS **/
+    .projects__slider 
+        width: auto
+        .slick-prev
+            left: 32px
+        .slick-next
+            right: 32px
+@media ( max-width: 992px )
+    .projects
+        &__wrapper
+            height: 492px
+        &__slider         
+            .slick-prev
+                left: 111px
+            .slick-next
+                right: 111px
+@media ( max-width: 768px )
+    .projects
+        &__wrapper 
+            margin-top: 18px
+        &__slider
+            .slick-prev
+                left: 35px
+            .slick-next
+                right: 35px
+@media ( max-width: 576px )
+    .projects
+        padding-top: 60px
+        &__wrapper
+            padding-top: 59px
+            height: 536px
+        &__slider-item-content
+            width: 400px
+            height: 297px
+        &__slider-item-content
+            img 
+                max-width: 360px
+        &__slider-item-descr
+            padding: 10px 5px
+            a 
+                margin: 19px 0 0 15px
+        &__slider-item-descr-characteristics-item
+            img
+                transform: scale(0.9)
+        .slick-arrow
+            width: 90px
+            height: 90px
+            top: 105%
+            transform: translateX(-50%)
+            &::after
+                width: 110px
+                height: 110px
+        .slick-prev
+            left: 35%
+        .slick-next
+            left: 65%
+@media ( max-width: 425px )
+    .projects
+        &__wrapper
+            padding-top: 100px
+        &__slider-item-content
+            width: 300px
+            height: 220px
+            border: 10px solid #000
+            img
+                max-width: 280px
+        .slick-arrow
+            top: 108%
+        .slick-prev
+            left: 31%
+        .slick-next
+            left: 69%
+        &__slider-item-descr
+            height: 128px
+            flex-direction: column
+        &__slider-item-descr a
+            width: 100%
+            margin: 6px 0 0 0
+        &__slider-item-descr-characteristics-item
+            margin-right: 10px
+            &:last-child
+                margin-right: 0
+        &__slider-item-descr-characteristics-item img
+            transform: scale(0.8)
+        &__slider-item-descr-characteristics-wrapper
+            justify-content: center
+        &__slider-item-descr-characteristics
+            width: 100%

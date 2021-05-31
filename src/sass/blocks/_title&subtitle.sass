@@ -1,0 +1,71 @@
+.title
+    font-family: 'Myriad Pro Bold'
+    font-size: 60px
+    line-height: 60px
+    color: #000000
+    margin-bottom: 12px
+    &_in-header
+        font-family: 'Corbel Bold'
+        font-size: 56px
+        line-height: 0.97
+        letter-spacing: -1.4px
+        margin: 37px 0 30px 0
+        color: #282a2e
+    &_in-consultation
+        font-family: 'Corbel Bold'
+        font-size: 48px
+        line-height: 0.88
+        color: #ffffff
+        text-transform: uppercase
+    &_h2
+        font-family: 'Myriad Pro Bold'
+        font-size: 24px
+        letter-spacing: -0.48px
+        color: #ffffff
+.subtitle
+    font-size: 20px
+    color: #918f89
+    letter-spacing: -0.8px
+
+.title-subtitle-block
+    display: flex
+    justify-content: space-between
+    &_mb23
+        margin-bottom: 23px
+    a 
+        color: #918f89
+
+@media ( max-width: 1200px )
+    .title_h2
+        font-size: 20px
+    .title-subtitle-block__content
+        overflow: hidden 
+@media ( max-width: 992px )
+    .title
+        font-size: 45px
+        &_in-consultation
+            line-height: 45px
+    .title-subtitle-block       
+        flex-direction: column 
+        &__content
+            width: 100%
+@media ( max-width: 768px )
+    .title-subtitle-block
+        flex-direction: column
+        &__content
+            width: 100%
+    .subtitle
+        text-align: left
+@media ( max-width: 576px )
+    .title
+        font-size: 37px
+        &_h2
+            font-size: 18px
+@media ( max-width: 425px )
+    .title
+        line-height: 37px
+        &_in-consultation
+            font-size: 35px
+            text-align: left
+    .subtitle
+        font-size: 18px

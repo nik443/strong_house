@@ -1,0 +1,86 @@
+.advantages
+    padding: 90px 0 51px 0
+    position: relative
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__content-text
+        width: 840px
+    &__content-advantages-title, &__content-advantages-description
+        text-align: justify
+    &__content-advantages-title
+        font-size: 36px
+        font-family: 'Myriad Pro Bold'
+        margin: 17px 0 30px 0
+    &__content-advantages-description
+        font-size: 18px
+    &__content-videos
+        width: 399px
+        height: 490px
+        padding: 32px 29px 36px
+        margin-top: 108px
+        background-color: #262626
+        position: relative
+    &__content-video-block
+        width: 341px
+        height: 192px
+        background: url('../img/advantages-video.jpg') 
+        position: relative
+        &:first-child
+            margin-bottom: 38px
+    &__content-videos-bg
+        position: absolute
+        top: -208px
+        left: 4px
+        width: 445px
+        height: 776px
+        background: url('../img/bg/advantages-video-bg.svg')
+        z-index: -1
+
+@media ( max-width: 1438px )
+    .advantages
+        overflow: hidden
+        &__content-text
+            overflow: hidden
+            width: auto
+        &__content-videos
+            margin-left: 70px
+@media ( max-width: 1200px )
+    .advantages
+        padding: 74px 0 0 0
+@media ( max-width: 992px )
+    .advantages
+        &__content
+            flex-direction: column
+        &__content-videos
+            display: flex
+            height: 243px
+            width: 690px
+            margin: 50px 0 0 0
+            padding: 25px
+        &__content-video-block
+            &:first-child
+                margin: 0 25px 0 0
+        &__content-videos-bg
+            display: none
+@media ( max-width: 768px )
+    .advantages
+        &__content-advantages-description, &__content-advantages-title 
+            text-align: left
+        &__content-videos
+            flex-direction: column
+            justify-content: space-between
+            height: 460px
+            width: 390px
+@media ( max-width: 576px )
+    .advantages__content-advantages-title
+        font-size: 30px
+@media ( max-width: 425px )
+    .advantages
+        &__content-videos
+            width: 300px
+            height: 414px
+            padding: 10px
+        &__content-video-block
+            width: 100%

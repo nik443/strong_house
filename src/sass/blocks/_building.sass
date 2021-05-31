@@ -1,0 +1,197 @@
+.building
+    position: relative
+    padding-top: 77px
+    padding: 77px 0 98px 0
+    &__header
+        display: flex
+        justify-content: space-between
+    &__content
+        margin-top: 55px
+        display: flex
+        justify-content: space-between
+    &__house-item
+        height: 435px
+        p
+            font-size: 16px
+            color: #ffffff
+            width: 199px
+    &__house-item-content-wrapper
+        position: relative
+    &__house-item-content
+        text-align: left
+        height: 433px
+        position: relative
+        overflow: hidden
+    &__house-item-descr-black
+        background-color: #282a2e
+        width: 405px
+        height: 160px
+        position: absolute
+        bottom: 28px
+        z-index: 1
+        padding: 45px 25px 45px 25px
+        h2
+            margin-bottom: 7px
+        &_left-item
+            width: 422px
+            height: 184px
+            transform: rotate(-5deg) translate(-11px, 38px)
+            h2, p
+                transform: rotate(5deg) translate(11px, -17px)
+            h2
+                margin-bottom: 0
+        &_rigth-item
+            width: 422px
+            height: 184px
+            transform: rotate(5deg) translate(-11px, 38px)
+            h2, p
+                transform: rotate(-5deg) translate(11px, -13px)
+            h2
+                margin-bottom: 14px
+    &__house-item-descr-subline1
+        height: 27px
+        width: 405px
+        background-color: #f36746
+        position: absolute
+        z-index: 2
+        bottom: 1px
+        width: 420px
+        &_left-item
+            background-color: #3cbfc3
+            transform: rotate(5deg) translate(-10px, -16px)
+        &_rigth-item
+            background-color: #3cbfc3
+            transform: rotate(-5deg) translate(-10px, -16px)
+    &__house-item-descr-subline2
+        height: 37px
+        width: 418px
+        background-color: #ffffff
+        position: absolute
+        bottom: -18px
+        z-index: 3
+        &_left-item
+            transform: rotate(5deg) translate(-10px, 2px)
+        &_rigth-item
+            transform: rotate(-5deg) translate(-10px, 2px)
+
+@media ( max-width: 1438px )
+    .building
+        &__content
+            justify-content: center
+        &__house-item
+            &:first-child
+                margin-right: 30px
+            &:last-child
+                margin-left: 30px
+        &__house-item-content
+            height: 427px
+            img
+                width: 365px   
+        &__house-item-descr-black
+            padding: 39px 15px 21px 15px
+            width: 374px    
+        &__house-item-descr-black_left-item
+            transform: rotate(-5deg) translate(-4px,38px)
+        &__house-item-descr-black_rigth-item
+            transform: rotate(5deg) translate(-4px,38px)
+@media ( max-width: 1200px )
+    .building
+        padding: 63px 0 74px 0
+        &__house-item-content
+            height: 371px
+            img
+                width: 299px   
+        &__house-item-descr-black
+            padding: 39px 15px 21px 15px
+            width: 100%  
+            h2
+                font-size: 19px
+            p
+                width: 194px
+        &__house-item-descr-black_left-item
+            width: 320px
+            transform: rotate(-5deg) translate(-5px,38px)
+        &__house-item-descr-black_rigth-item
+            width: 320px
+            transform: rotate(5deg) translate(-5px,38px)
+        &__house-item-descr-subline1_left-item
+                transform: rotate(5deg) translate(-10px,-7px)
+        &__house-item-descr-subline2_left-item
+            transform: rotate(5deg) translate(-10px,11px)
+@media ( max-width: 992px )
+    .building
+        &__content
+            max-width: 762px
+            margin: 0 auto
+            margin-top: 50px
+        &__house-item:first-child
+            margin-right: 0
+        &__house-item:last-child
+            margin-left: 0
+        &__house-item-content
+            width: 282px
+            margin: 0 auto
+            img
+                width: 282px
+        &__house-item-descr-black
+            height: 138px
+            width: 282px
+            transform: rotate(0deg) translate(0,6px)
+            padding: 15px 15px 21px 15px
+            h2, p
+                    transform: rotate(0deg) translate(0px,0px)
+            h2
+                margin-bottom: 0
+        &__house-item-descr-subline1
+            transform: rotate(0deg) translate(-10px,0px)
+        &__house-item-descr-subline2_rigth-item
+            display: none
+        &__house-item-descr-subline2_left-item
+            display: none
+        .slick-arrow
+            font-size: 0
+            width: auto
+            height: 55px
+            background-color: transparent
+            border-color: transparent
+            position: absolute
+            top: 57%
+            z-index: 2
+            display: block
+        .slick-disabled
+            display: none
+        .slick-prev
+            left: 0
+        .slick-next
+            right: 0
+        .slick-next img
+            transform: rotate(180deg)
+@media ( max-width: 768px )
+    .building
+        padding: 63px 0 41px 0
+        &__house-item
+            height: 417px
+        &__house-item-content-wrapper
+            width: 282px
+            margin: 0 auto
+        .slick-arrow
+            top: 61%
+        .slick-prev
+            left: 78px
+        .slick-next
+            right: 78px
+@media ( max-width: 576px )
+    .building
+        padding: 46px 0 36px 0
+        &__content
+            margin-top: 27px
+        .slick-prev
+            left: 26px
+        .slick-next
+            right: 26px
+@media ( max-width: 425px )
+    .building
+        .slick-prev
+            left: 6px
+        .slick-next
+            right: 6px
